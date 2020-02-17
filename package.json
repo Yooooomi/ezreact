@@ -1,0 +1,56 @@
+{
+	"name": "ezreact",
+	"publisher": "yooooomi",
+	"displayName": "ezreact",
+	"description": "create style and index react files",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yooooomi/ezreact.git"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.create"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.create",
+				"title": "Create react files"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.create",
+					"group": "7_modification"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.39.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.2.0"
+	},
+	"__metadata": {
+		"id": "f42a4363-1c0a-4945-94f7-b529799a932e",
+		"publisherId": "2d9ae6c6-5992-4780-832f-de1883a5985c",
+		"publisherDisplayName": "yooooomi"
+	}
+}
