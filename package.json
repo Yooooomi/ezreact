@@ -3,7 +3,7 @@
 	"publisher": "yooooomi",
 	"displayName": "ezreact",
 	"description": "create style and index react files",
-	"version": "0.1.0",
+	"version": "0.2.1",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
@@ -32,6 +32,28 @@
 					"group": "7_modification"
 				}
 			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Ezreact configuration",
+			"properties": {
+				"ezreact.componentType": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "Component type (Hook / Class)"
+				},
+				"ezreact.styleType": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "Style type (JS / CSS)"
+				}
+			}
 		}
 	},
 	"scripts": {
