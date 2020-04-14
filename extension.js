@@ -30,7 +30,7 @@ const styleToFilename = {
 async function onCreate(file) {
 	let config = getConfig();
 
-	if (!config.has('componentType') || !config.has('styleType')) {
+	if (!config.componentType || !config.styleType) {
 		const resp = await vscode.window.showInformationMessage('You did not configure ezreact, do it now ?', 'Yes', 'No');
 		if (resp === 'Yes') {
 			await firstConfig();
